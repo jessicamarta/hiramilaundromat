@@ -72,7 +72,7 @@ include '../koneksi.php';
                                     ?>
                                 </span>
                             </h1>
-                            Jumlah Cucian Siap Ambil
+                            Jumlah Cucian Dicuci
                         </div>
                     </div>
                 </div>
