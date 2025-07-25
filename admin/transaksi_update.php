@@ -14,7 +14,7 @@ $jumlah_pakaian = $_POST['jumlah_pakaian'];
 mysqli_query($koneksi,"delete from pakaian where pakaian_transaksi='$id'");
 for($x=0;$x<count($jenis_pakaian);$x++){
     if($jenis_pakaian[$x] != ""){
-        mysqli_query($koneksi,"insert into pakaian values('','$id','$jenis_pakaian[$x]','$jumlah_pakaian[$x]')");
+        mysqli_query($koneksi,"insert into pakaian (pakaian_transaksi, pakaian_jenis, pakaian_jumlah) values ('$id','$jenis_pakaian[$x]','$jumlah_pakaian[$x]')");
 
 
     }
